@@ -1,11 +1,10 @@
 # The Ballerina Extended Library
 
-The [Ballerina](https://ballerina.io/) extended library includes useful libraries that is not shipped with core Ballerina 
+The [Ballerina](https://ballerina.io/) extended library includes useful libraries that are not shipped with core Ballerina 
 distribution. When building Ballerina applications these extensions are commonly used. 
 
 *Connectors* take a major part of the extended library. They are useful to call external SaaS applications within Ballerina 
-program you write. The connectors we have covers a wide spectrum of SaaS applications from databases to ERP, CRM, CMS and social media platforms. These libraries enable Ballerina application developers to do various application integrations, trigger notifications and automation of solutions. The connectors are deeply integrated with Ballerina language itself so that output of one connector can be transformed easily in the way your next connector needs. They are "Ballerina Stubs" for
-various APIs out there. 
+program you write. The connectors we have cover a wide spectrum of SaaS applications from databases to ERP, CRM, CMS and social media platforms. These libraries enable Ballerina application developers to do various application integrations, trigger notifications and automation of solutions. The connectors are deeply integrated with Ballerina language itself so that output of one connector can be transformed easily in the way your next connector needs. They are "Ballerina Stubs" for various APIs out there. 
 
 All connectors and other libraries are made available on [Ballerina Central](https://central.ballerina.io/). 
 
@@ -19,9 +18,9 @@ To enable independent releases of each connector, we have made the following rep
 1. Independently developed connectors.
      - each connector code is separated into a child repository. Therefore to go through the code, please refer to the relevant child repository. 
 2. Open API generated connectors. 
-     - We have developed a tool to generate Ballerina code out of a given Open API specification called [ballerina-openapi](https://github.com/ballerina-platform/ballerina-openapi). The connectors generated out of this tool resides at the repository [ballerinax-openapi-connectors](https://github.com/ballerina-platform/ballerinax-openapi-connectors). Please check in the directory `openapi`. 
+     - We have developed a tool to generate Ballerina connector out of a given Open API specification called [ballerina-openapi](https://github.com/ballerina-platform/ballerina-openapi). The connectors generated out of this tool reside at the repository [ballerinax-openapi-connectors](https://github.com/ballerina-platform/ballerinax-openapi-connectors). Please check in the directory `openapi`. 
 
-All above repositories are owned and maintained by the Ballerina ecosystem team who is responsible for governing, ensuring security and quality, doing timely releases, maintaining backward compatibility, etc.
+All above repositories are owned and maintained by the Ballerina Ecosystem Team who is responsible for governing, ensuring security and quality, doing timely releases, maintaining backward compatibility, etc.
 
 ## Contributing to Ballerina
 
