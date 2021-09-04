@@ -1,0 +1,30 @@
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  apply-label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v4
+        with:
+          script: |
+            var body = context.payload.issue.body
+            var words = body.split(" ");
+            console.log(words)
+            for (var i = 0; i < words.length - 1; i++) {
+                var word = words[i]
+                if(word.startsWith('Name\n\nmodule/') | word.startsWith('Name\n\nconnectors/')) {
+                    var label = word.substring(6) 
+                    console.log(label)
+                    github.issues.addLabels({
+                    issue_number: context.issue.number,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    labels: [label]
+                     })
+                    break 
+                }
+            }
+
+

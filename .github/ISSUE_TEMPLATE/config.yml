@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Issue with Open API to Ballerina Generator Tool
+    url:  https://github.com/ballerina-platform/ballerina-openapi/issues/new/choose
+    about: Please open issues relating to the API to Ballerina Generator Tool.

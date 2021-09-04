@@ -1,0 +1,52 @@
+# pls refer https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+name: ✍️ New Task
+description: Create a new task
+title: "[Task]: "
+labels: [Type/Task]
+body:
+  - type: dropdown
+    id: Connector-name
+    attributes:
+      label: Connector Name
+      description: Choose the connector your task is related to (choose other if it is not)
+      options:
+        - connectors/openapi (Open API Connector)
+        - module/aws-s3 (AWS S3)
+        - module/aws-sqs (AWS SQS)
+        - module/azure-ad (Azure Active Directory)
+        - module/azure-eventhub (Azure Event Hub)
+        - module/azure-servicebus (Azure Servicebus)
+        - module/azure-storageservice (Azure Blob & Storage Service)
+        - module/cosmosdb (Cosmos DB)
+        - module/gcalendar (Google Calendar)
+        - module/gdrive (Google Drive)
+        - module/github (Github)
+        - module/gmail (Gmail)
+        - module/google-peopleapi (People API)
+        - module/gsheet (Google Sheet)
+        - module/microsoft-excel (MS Excel)
+        - module/microsoft-onedrive (MS OneDrive)
+        - module/microsoft-onenote (MS OneNote)
+        - module/microsoft-teams (MS Teams)
+        - module/mongodb (Mongo DB)
+        - module/netsuite (Netsuite)
+        - module/outlook-calendar (Outlook Calendar)
+        - module/outlook-mail (Outlook Mail)
+        - module/redis (Redis)
+        - module/salesforce (Salesforce)
+        - module/slack (Slack)
+        - module/snowflake (SnowFlake)
+        - module/twilio (Twilio)
+        - module/twitter (Twitter)
+        - other (None Listed Above)
+    validations:
+      required: true
+  - type: textarea
+    id: task-description
+    attributes:
+      label: Task Description
+      description: Describe the task to be performed 
+      placeholder: A clear and concise description of what needs to be done. Specify a scope if relevent.
+    validations:
+      required: true
+
