@@ -1,0 +1,59 @@
+# pls refer https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+name: 📖 Doc Issue/Improvement Report 
+description: File a documentation issue/improvement
+title: "[Docs]: "
+labels: [Type/Docs]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to improve our docs!
+  - type: dropdown
+    id: Connector-name
+    attributes:
+      label: Connector Name
+      description: Choose the connector you are reporting the documentation issue/improvement against
+      options:
+        - connectors/openapi (Open API Connector)
+        - module/aws-s3 (AWS S3)
+        - module/aws-sqs (AWS SQS)
+        - module/azure-ad (Azure Active Directory)
+        - module/azure-eventhub (Azure Event Hub)
+        - module/azure-servicebus (Azure Servicebus)
+        - module/azure-storageservice (Azure Blob & Storage Service)
+        - module/cosmosdb (Cosmos DB)
+        - module/gcalendar (Google Calendar)
+        - module/gdrive (Google Drive)
+        - module/github (Github)
+        - module/gmail (Gmail)
+        - module/google-peopleapi (People API)
+        - module/gsheet (Google Sheet)
+        - module/microsoft-excel (MS Excel)
+        - module/microsoft-onedrive (MS OneDrive)
+        - module/microsoft-onenote (MS OneNote)
+        - module/microsoft-teams (MS Teams)
+        - module/mongodb (Mongo DB)
+        - module/netsuite (Netsuite)
+        - module/outlook-calendar (Outlook Calendar)
+        - module/outlook-mail (Outlook Mail)
+        - module/redis (Redis)
+        - module/salesforce (Salesforce)
+        - module/slack (Slack)
+        - module/snowflake (SnowFlake)
+        - module/twilio (Twilio)
+        - module/twitter (Twitter)
+        - other (None Listed Above)
+    validations:
+      required: true
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Documentation Issue/Improvement
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Relevant suggestions
+      description: If you are suggesting a text as the solution please specify below
