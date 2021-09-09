@@ -2,7 +2,7 @@
 name: 💡 New Feature Request
 description: Create a new feature request
 title: "[Feature]: "
-labels: [Type/New Feature]
+labels: [Type/New Feature,Team/Connector]
 body:
   - type: dropdown
     id: Connector-name
