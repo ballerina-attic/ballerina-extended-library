@@ -2,7 +2,7 @@
 name: 📖 Doc Issue/Improvement Report 
 description: File a documentation issue/improvement
 title: "[Docs]: "
-labels: [Type/Docs,Team/Connector]
+labels: [Type/Docs,Team/Connector,Component/Connector]
 body:
   - type: markdown
     attributes:
