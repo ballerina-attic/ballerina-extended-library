@@ -2,7 +2,7 @@
 name: 🤔 Improvement Request 
 description: Create an improvement request for an existing feature
 title: "[Improvement]: "
-labels: [Type/Improvement,Team/Connector]
+labels: [Type/Improvement,Team/Connector,Component/Connector]
 body:
   - type: dropdown
     id: Connector-name

@@ -2,7 +2,7 @@
 name: 🐞 Bug Report 
 description: File a bug report
 title: "[Bug]: "
-labels: [Type/Bug,Team/Connector]
+labels: [Type/Bug,Team/Connector,Component/Connector]
 body:
   - type: markdown
     attributes:
