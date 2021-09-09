@@ -2,7 +2,7 @@
 name: ✍️ New Task
 description: Create a new task
 title: "[Task]: "
-labels: [Type/Task]
+labels: [Type/Task,Team/Connector]
 body:
   - type: dropdown
     id: Connector-name
