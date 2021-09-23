@@ -16,6 +16,8 @@ body:
       options:
         - connectors/openapi (Open API Connector)
         - module/aws-s3 (AWS S3)
+        - module/aws-ses (AWS SES)
+        - module/aws-sns (AWS SNS)
         - module/aws-sqs (AWS SQS)
         - module/azure-ad (Azure Active Directory)
         - module/azure-eventhub (Azure Event Hub)
