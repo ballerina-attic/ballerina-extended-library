@@ -1,0 +1,48 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Weekly Open API Connector Issue
+# on:
+#   schedule:
+#     - cron: 30 0 * * 1
+on:
+   issues:
+     types: [closed]
+
+jobs:
+  create_issue:
+    name: Create weekly open api issue
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Create weekly open api issue
+        uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
+        with:
+          assignees: "abeykoon"
+          labels: "Component/Connector,Team/Connector,Type/Improvement"
+          title: "[Improvement]: [Week Start. ${{ steps.date.outputs.date }}] Generate Open API Connectors "
+          body: |
+            ### Connector Name
+
+            connectors/openapi (Open API Connector)
+
+            ### Suggested improvement
+
+            Generate following connectors Using [Open API to Ballerina](https://github.com/ballerina-platform/ballerina-openapi) tool.
+
+            - [ ] - [Connector Name](link to the Open API)
+
+            ### Related issues
+
+            N/A
+
+          pinned: true
+          close-previous: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
