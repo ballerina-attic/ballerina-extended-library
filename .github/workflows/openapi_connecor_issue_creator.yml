@@ -4,12 +4,9 @@
 # documentation.
 
 name: Weekly Open API Connector Issue
-# on:
-#   schedule:
-#     - cron: 30 0 * * 1
 on:
-   issues:
-     types: [closed]
+  schedule:
+    - cron: 30 0 * * 1
 
 jobs:
   create_issue:
@@ -25,7 +22,7 @@ jobs:
         uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
         with:
           assignees: "abeykoon"
-          labels: "Component/Connector,Team/Connector,Type/Improvement"
+          labels: "Component/Connector,Team/Connector,Type/Improvement,connectors/openapi"
           title: "[Improvement]: [Week Start. ${{ steps.date.outputs.date }}] Generate Open API Connectors "
           body: |
             ### Connector Name
