@@ -14,7 +14,7 @@ jobs:
             console.log(words)
             for (var i = 0; i < words.length - 1; i++) {
                 var word = words[i]
-                if(word.startsWith('Name\n\nmodule/') | word.startsWith('Name\n\nconnectors/')) {
+                if(word.startsWith('Name\n\nmodule/') | word.startsWith('Name\n\nconnectors/') | word.startsWith('Name\n\ntools/')) {
                     var label = word.substring(6) 
                     console.log(label)
                     github.issues.addLabels({

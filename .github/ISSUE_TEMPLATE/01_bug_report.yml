@@ -15,8 +15,12 @@ body:
       description: Choose the connector you are reporting the bug against
       options:
         - connectors/openapi (Open API Connector)
+        - connectors/cdata (CDATA Connectors)
+        - module/aws-dynamodb (AWS Dynamo DB)
+        - module/aws-lambda (AWS Lambda)
         - module/aws-s3 (AWS S3)
         - module/aws-ses (AWS SES)
+        - module/aws-simpledb (AWS Simple DB)
         - module/aws-sns (AWS SNS)
         - module/aws-sqs (AWS SQS)
         - module/azure-ad (Azure Active Directory)
@@ -38,6 +42,7 @@ body:
         - module/netsuite (Netsuite)
         - module/outlook-calendar (Outlook Calendar)
         - module/outlook-mail (Outlook Mail)
+        - module/peoplehr (People HR)
         - module/redis (Redis)
         - module/salesforce (Salesforce)
         - module/slack (Slack)
