@@ -11,6 +11,7 @@ body:
       description: Choose the connector you are suggesting improvement for
       options:
         - connectors/openapi (Open API Connector)
+        - connectors/samples (Connector Samples/Templates)
         - connectors/cdata (CDATA Connectors)
         - module/aws-dynamodb (AWS Dynamo DB)
         - module/aws-lambda (AWS Lambda)
@@ -45,6 +46,7 @@ body:
         - module/snowflake (SnowFlake)
         - module/twilio (Twilio)
         - module/twitter (Twitter)
+        - module/storage-space (Storage Space Connector)
         - other (None Listed Above)
     validations:
       required: true
