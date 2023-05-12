@@ -18,19 +18,19 @@ To use the <module_name> module in your Ballerina application, follow the steps 
 ### Step 1 - Import connector
 
 ```ballerina
-    // Ballerina code snippet to add the import statement for the <connector_name> module.
+    // Ballerina code snippet to add the import statement.
 ```
 
 ### Step 2 - Create a new connector instance
 
 ```ballerina
-    //  Ballerina code snippet to create a new connector using the provided configuration.
+    // Ballerina code snippet to create a new client object from user configurations.
 ```
 
 ### Step 3 - Invoke  connector operation
 
 ```ballerina
-    //  Ballerina code snippet to invoke the connector operation.
+    //  Ballerina code snippet to invoke one or more connector operations.
 ```
 
 After completing the above steps you can run your Ballerina program using the following command.

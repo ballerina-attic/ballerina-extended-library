@@ -1,5 +1,5 @@
 # Adding a new Ballerina Extended Library Module
-- Authors: @ThisaruGuruge @NipunaRanasinghe
+- Authors: @NipunaRanasinghe @ThisaruGuruge
 - Reviewers: @abeykoon
 - Created: 2023/05/11
 - Updated: 2023/05/11
@@ -273,8 +273,6 @@ Following are the files that are required for the build.
 ├── LICENSE
 ├── README.md
 ├── build.gradle
-├── changelog.md
-├── codecov.yml
 ├── gradle.properties
 ├── gradlew
 ├── gradlew.bat
