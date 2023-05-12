@@ -9,7 +9,7 @@
 1. [Introduction](#introduction)
 2. [Prerequisites](#prerequisites)
 3. [Repository creation](#repository-creation)
-    * 3.1 [Repository naming](#repository-naming)
+    * 3.1 [Repository naming Conventions](#repository-naming-conventions)
 4. [Repository initialization](#repository-initialization)
 5. [Repository structure](#repository-structure)
     * 5.1 [The `.github/` directory](#the-github-directory-required)
@@ -63,7 +63,7 @@ The [Ballerina Azure Service Bus Module](https://github.com/ballerina-platform/m
   the [GITHUB Repo Creation Request Form](https://identity-internal.cloud.wso2.com/user-portal/t/wso2internal928/assets/webapp/8f912d33-ec75-4d5f-8fb3-ac5e6f96ddf2)
   in WSO2 internal apps.
 
-### Repository naming convention
+### Repository naming conventions
 
 The repository name should start with the `module-ballerinax-` prefix and then the module name.
 
