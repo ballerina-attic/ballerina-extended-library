@@ -1,9 +1,8 @@
 # Adding a new Ballerina Extended Library Module
-
-Authors: @ThisaruGuruge @NipunaRanasinghe
-Reviewers: @abeykoon
-Created: 2023/05/11
-Updated: 2023/05/11
+- Authors: @ThisaruGuruge @NipunaRanasinghe
+- Reviewers: @abeykoon
+- Created: 2023/05/11
+- Updated: 2023/05/11
 
 ## Table of Contents
 
@@ -16,6 +15,10 @@ Updated: 2023/05/11
     * 5.1 [The `.github/` directory](#the-github-directory-required)
         * 5.1.1 [The `workflows/` directory](#the-workflows-directory-required)
     * 5.2 [The `ballerina/` directory](#the-ballerina-directory-gradle-submodulerequired)
+        * 5.2.1 [The `ballerina.toml` file](#the-ballerinatoml-file-required)
+        * 5.2.2 [The `Package.md` file](#the-packagemd-file-required)
+        * 5.2.3 [The `Module.md` file](#the-modulemd-file-required)
+        * 5.2.4 [The other files](#the-other-files-optional)
     * 5.3 [The `build-config/` directory](#the-build-config-directory-required)
     * 5.4 [The `ballerina-tests/` directory](#the-ballerina-tests-directory-gradle-submoduleoptional)
     * 5.5 [The `compiler-plugin/` directory](#the-compiler-plugin-directory-gradle-submoduleoptional)
@@ -181,8 +184,44 @@ This workflow script is triggered automatically when a pull request is created o
 
 This directory contains the Ballerina module source code including the `Ballerina.toml`, `Module.md`, and `Package.md` files and the tests.
 
-It also includes a `build.gradle` file, which is used to build the Ballerina submodule. You can use the [Ballerina Gradle plugin](https://github.com/ballerina-platform/plugin-gradle) to build the Ballerina module. 
-The Ballerina Gradle plugin to add automated commits during the build to update the `Ballerina.toml`, `Dependencies.toml`, and `CompilerPlugin.toml` files.
+#### The `Ballerina.toml` file [Required]
+
+This file contains the Ballerina module metadata. The following is the recommended template for the `Ballerina.toml` file.
+
+```toml
+[package]
+distribution = "<ballerina_version>"   # e.g: "2201.5.0"
+org = "ballerinax"                     # DO NOT CHANGE
+name = "<module_name>"                 # e.g: "twillio", "aws.s3", "googleapis.gmail"
+version = "<version>"                  # e.g: "1.0.0"
+license= ["<license_name>"]            # e.g: ["Apache-2.0"]
+authors = ["<author_name>"]            # e.g: "wso2", "ballerina"
+keywords = ["list", "of", "keywords"]  # e.g: ["IT Operations/Message Brokers", "Cost/Paid", "Vendor/Microsoft"]
+icon = "<icon_path>"                   # e.g: "icon.png"
+repository = "<repository_url>"        # e.g: "https://github.com/ballerina-platform/module-ballerinax-azure-service-bus
+
+[build-options]
+observabilityIncluded = true
+```
+
+Refer to the [Ballerina Package References](https://ballerina.io/learn/package-references/#the-ballerinatoml-file/) documentation for detailed information on all the available properties.
+
+#### The `Package.md` file [Required]
+
+This file contains the Ballerina package documentation, which will be shown in Ballerina central. (e.g. [Google Sheets Central Documentation](https://central.ballerina.io/ballerinax/googleapis.sheets/3.2.0))
+
+> The recommended template for the `Package.md` file can be found in [here](file-templates/Package.md)
+
+#### The `Module.md` file [Required]
+
+This file contains the Ballerina module documentation, which will be shown in API docs. 
+(e.g. `Overview` section of the [Google Sheets API Docs](https://lib.ballerina.io/ballerinax/googleapis.sheets/3.2.0)).
+
+> The recommended template for the `Module.md` file can be found in [here](file-templates/Module.md)
+
+#### The other files [Optional]
+In addition to the above-mentioned files, a Ballerina package can contain other directories and files as required.
+Refer to the [Ballerina Package References](https://ballerina.io/learn/package-references/) documentation for more information on other supported files and directories.
 
 ### The `build-config` directory [Required]
 
