@@ -57,11 +57,8 @@ The [Ballerina Azure Service Bus Module](https://github.com/ballerina-platform/m
 
 ## Repository Creation
 
-- The new repository should be created under
-  the [Ballerina Platform Organization](https://github.com/ballerina-platform).
-- The repository request can be created by filling out
-  the [GITHUB Repo Creation Request Form](https://identity-internal.cloud.wso2.com/user-portal/t/wso2internal928/assets/webapp/8f912d33-ec75-4d5f-8fb3-ac5e6f96ddf2)
-  in WSO2 internal apps.
+- The new repository should be created under the [Ballerina Platform Organization](https://github.com/ballerina-platform).
+- The repository request can be created by filling out the **GitHub Repo Creation Request Form** in WSO2 internal apps.
 
 ### Repository naming conventions
 
@@ -282,13 +279,13 @@ Following are the files that are required for the build.
 
 ### The `LICENSE` file [Required]
 
-This file contains the license of the module. All the Ballerina Standard Library modules use the `Apache-2` license.
+This file contains the license of the module. All the Ballerina Extended Library modules use the `Apache-2` license.
 
 ### The `README.md` file [Required]
 
 This file contains the description and the build steps of the module. Usually the content of this file is similar to the `Module.md` and `Package.md` files of the Ballerina module.
 
-It also includes the status badges for the module including the `Build`, `CodeCoverage`, `Trivy`, `GraalVM`, `last commit`, and the `Open Issues` badges.
+It also includes the status badges for the module including the `Latest Version`, `Build Status`, `Bugs Cound`, and the `Open Pull Requests` badges.
 
 ### The `build.gradle` file [Required]
 
