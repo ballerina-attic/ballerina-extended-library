@@ -1,7 +1,7 @@
 # Quality Assurance Guide for Ballerina Extended Library Modules
 
-- Authors: @NipunaRanasinghe 
-- Reviewers: @abeykoon @anupama-pathirage 
+- Authors: @NipunaRanasinghe
+- Reviewers: @abeykoon @anupama-pathirage
 - Created: 2023/05/26
 - Updated: 2023/05/29
 
@@ -17,9 +17,9 @@ compatibility, security, performance, documentation, and code quality aspects of
 
 We have enforced a common structure for all Ballerina extended library modules to ensure the consistency and
 maintainability of the modules.
-Refer to the [Repository Structure](module-contribution-guide.md#repository-structure) section of the Ballerina
-extended library contribution guide and, make sure to fix any deviations from the recommended structure as much as
-possible.
+
+- Refer to the [Repository Structure](module-contribution-guide.md#repository-structure) section of the Ballerina
+  extended library contribution guide for more information on the recommended structure.
 
 ## Code Quality
 
@@ -67,6 +67,7 @@ possible.
 ## Testing
 
 - Unit tests should be written to cover the functionality of the module.
+- It is recommended to have 80% or more code coverage for the extended library modules.
 - Test cases for edge cases, error handling, and boundary conditions should be included.
 - It is strongly recommended to add new test cases for any bug fixes or enhancements introduced.
 
@@ -111,6 +112,19 @@ Following steps can be taken to identify the security vulnerabilities of the thi
 
 Additionally, a security vulnerability can be notified either from internal security tests and scans or
 the <security@ballerina.io> mailing list. More on that is explained [here](https://ballerina.io/security/).
+
+## Tooling Support
+
+Library developers must verify that the tooling support is available and working as expected for a given library.
+Even though there are many tools available, the primary focus should be on the Ballerina VSCode plugin.
+
+- The following features are expected be tested and verified on each extended library module.
+    - Syntax highlighting
+    - Diagnostics
+    - Code completions
+    - Code actions
+    - Formatting
+    - Hover
 
 ## Community Feedback
 
