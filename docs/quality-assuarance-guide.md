@@ -10,8 +10,7 @@
 This document outlines a set of rules and guidelines to be followed during the development, testing, and documentation
 stages of the Ballerina extended library development lifecycle.
 By adhering to this checklist, Ballerina extended library developers can effectively evaluate and validate the
-functionality,
-compatibility, security, performance, documentation, and code quality aspects of the modules.
+functionality, compatibility, security, performance, documentation, and code quality aspects of the modules.
 
 ## Library Structure
 
@@ -59,20 +58,24 @@ maintainability of the modules.
 
 ## Documentation
 
-- Each module should have a `Package.md` file which should contain the following information:
+- Each module should have a `Package.md` file with the following information:
     - Brief overview of the module.
     - Compatibility section that contains the minimum-compatible Ballerina version and the version of the external
       library or API that the module is compatible with.
     - Community links such as the repository, issue tracker, and discussion channels.
     - The recommended template for the Package.md file can be found in [here](file-templates/Package.md)
-- Each module should have a `Module.md` file which should contain the following information:
+- Each module should have a `Module.md` file with the following information:
     - Brief overview of the module.
     - List of prerequisites (e.g., accounts, access tokens, etc.) required to use the module.
     - Quick start guide that contains a simple example of how to use the module.
-    - Link to the sample directory that contains more examples.
+    - Link to the `samples`/`examples` directory that contains more real world examples.
     - The recommended template for the Module.md file can be found in [here](file-templates/Module.md)
-- The documentation should be clear, comprehensive, and kept up to date.
-- The documentation should be updated along with the new changes or additions to the module.
+- For handwritten connectors, the spec and the proposals should be added to `docs/spec` and `docs/proposals`directories
+  respectively.
+- Ballerina API documentation should follow the best practices.
+  Refer to the https://ballerina.io/learn/generate-code-documentation/#write-ballerina-documentation for more details.
+- All of the above documentation components should be kept updated along with any impacting changes or additions to the
+  module.
 
 ## Testing
 
