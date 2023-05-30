@@ -59,15 +59,25 @@ maintainability of the modules.
 
 ## Documentation
 
+- Each module should have a `Package.md` file which should contain the following information:
+    - Brief overview of the module.
+    - Compatibility section that contains the minimum-compatible Ballerina version and the version of the external
+      library or API that the module is compatible with.
+    - Community links such as the repository, issue tracker, and discussion channels.
+    - The recommended template for the Package.md file can be found in [here](file-templates/Package.md)
+- Each module should have a `Module.md` file which should contain the following information:
+    - Brief overview of the module.
+    - List of prerequisites (e.g., accounts, access tokens, etc.) required to use the module.
+    - Quick start guide that contains a simple example of how to use the module.
+    - Link to the sample directory that contains more examples.
+    - The recommended template for the Module.md file can be found in [here](file-templates/Module.md)
 - The documentation should be clear, comprehensive, and kept up to date.
-- Any missing or incomplete sections in the documentation should be identified and completed.
-- Usage examples and guidelines for developers should be included in the documentation.
-- The documentation should be updated to reflect any changes or additions to the module.
+- The documentation should be updated along with the new changes or additions to the module.
 
 ## Testing
 
 - Unit tests should be written to cover the functionality of the module.
-- It is recommended to have 80% or more code coverage for the extended library modules.
+- It is required to have 80% or more code coverage for the extended library modules.
 - Test cases for edge cases, error handling, and boundary conditions should be included.
 - It is strongly recommended to add new test cases for any bug fixes or enhancements introduced.
 
