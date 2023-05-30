@@ -67,7 +67,7 @@ maintainability of the modules.
 - Each module should have a `Module.md` file with the following information:
     - Brief overview of the module.
     - List of prerequisites (e.g., accounts, access tokens, etc.) required to use the module.
-    - Quick start guide that contains a simple example of how to use the module.
+    - Quick start guide that contains step-by-step instructions (along with code snippets) of a simple use case.
     - Link to the `samples`/`examples` directory that contains more real world examples.
     - The recommended template for the Module.md file can be found in [here](file-templates/Module.md)
 - For handwritten connectors, the spec and the proposals should be added to `docs/spec` and `docs/proposals`directories
