@@ -1,4 +1,4 @@
-# Quality Assurance Guide for Ballerina Extended Library Modules
+# Quality Assurance Guide for Ballerina Library Modules
 
 - Authors: @NipunaRanasinghe
 - Reviewers: @abeykoon @anupama-pathirage
@@ -8,17 +8,17 @@
 ## Introduction
 
 This document outlines a set of rules and guidelines to be followed during the development, testing, and documentation
-stages of the Ballerina extended library development lifecycle.
-By adhering to this checklist, Ballerina extended library developers can effectively evaluate and validate the
+stages of the Ballerina library development lifecycle.
+By adhering to this checklist, Ballerina library developers can effectively evaluate and validate the
 functionality, compatibility, security, performance, documentation, and code quality aspects of the modules.
 
 ## Library Structure
 
-We have enforced a common structure for all Ballerina extended library modules to ensure the consistency and
+We have enforced a common structure for all Ballerina library modules to ensure consistency and
 maintainability of the modules.
 
 - Refer to the [Repository Structure](module-contribution-guide.md#repository-structure) section of the Ballerina
-  extended library contribution guide for more information on the recommended structure.
+  library contribution guide for more information on the recommended structure.
 
 ## Code Quality
 
@@ -28,7 +28,7 @@ maintainability of the modules.
       to [Ballerina anti-patterns](https://docs.google.com/document/d/1y6QVqaZzZt9jMpYV4jP5WRS_W_KoC4y40Uuoh1ALu8E/edit?usp=sharing)
       documentation.
 
-- If the extended library module contains a native (i.e. Java) implementation,
+- If the Ballerina library module contains a native (i.e. Java) implementation,
     - Java coding standards and best practices must be followed.
     - Java static analysis tools such as [Checkstyle](https://checkstyle.sourceforge.io/)
       and [SpotBugs](https://spotbugs.github.io/) should be configured to ensure code quality.
