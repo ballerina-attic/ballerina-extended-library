@@ -1,16 +1,16 @@
-# The Ballerina Extended Library
+# The Ballerina Library
 
-The [Ballerina](https://ballerina.io/) extended library includes useful libraries that are not shipped with core Ballerina 
+The [Ballerina](https://ballerina.io/) library includes useful libraries that are not shipped with core Ballerina 
 distribution. When building Ballerina applications these extensions are commonly used. 
 
-*Connectors* take a major part of the extended library. They are useful to call external SaaS applications within Ballerina 
+*Connectors* take a major part of the Ballerina library. They are useful to call external SaaS applications within Ballerina 
 program you write. The connectors we have cover a wide spectrum of SaaS applications from databases to ERP, CRM, CMS and social media platforms. These libraries enable Ballerina application developers to do various application integrations, trigger notifications and automation of solutions. The connectors are deeply integrated with Ballerina language itself so that output of one connector can be transformed easily in the way your next connector needs. They are "Ballerina Stubs" for various APIs out there. 
 
 All connectors and other libraries are made available on [Ballerina Central](https://central.ballerina.io/). 
 
 ## Repository Organization
 
-This is the Parent repository of the Ballerina Extended Library and used to report bugs, request new features, start new discussions, view project boards, etc. 
+This is the Parent repository of the Ballerina library and used to report bugs, request new features, start new discussions, view project boards, etc. 
 
 ### Connectors
 To enable independent releases of each connector, we have made the following repository arrangement. 
