@@ -1,4 +1,6 @@
-# The Ballerina Extended Library
+# [DEPRICATED] docs-ballerina-vscode-extension
+
+## The Ballerina Extended Library
 
 The [Ballerina](https://ballerina.io/) extended library includes useful libraries that are not shipped with core Ballerina 
 distribution. When building Ballerina applications these extensions are commonly used. 
@@ -8,11 +10,11 @@ program you write. The connectors we have cover a wide spectrum of SaaS applicat
 
 All connectors and other libraries are made available on [Ballerina Central](https://central.ballerina.io/). 
 
-## Repository Organization
+### Repository Organization
 
 This is the Parent repository of the Ballerina Extended Library and used to report bugs, request new features, start new discussions, view project boards, etc. 
 
-### Connectors
+#### Connectors
 To enable independent releases of each connector, we have made the following repository arrangement. 
 
 1. Independently developed connectors.
@@ -22,29 +24,29 @@ To enable independent releases of each connector, we have made the following rep
 
 All above repositories are owned and maintained by the Ballerina Ecosystem Team who is responsible for governing, ensuring security and quality, doing timely releases, maintaining backward compatibility, etc.
 
-## Contributing to Ballerina
+### Contributing to Ballerina
 
 As an open source project, Ballerina welcomes contributions from the community. To start contributing, read these [contribution guidelines](https://github.com/ballerina-platform/ballerina-lang/blob/master/CONTRIBUTING.md) for information on how you should go about contributing to our project.
 
 Check the issue tracker for open issues that interest you. We look forward to receiving your contributions.
 
-## Code of Conduct
+### Code of Conduct
 
 All contributors are encouraged to read the [Ballerina Code of Conduct](https://ballerina.io/code-of-conduct).
 
-## License
+### License
 
 Ballerina code is distributed under [Apache license 2.0](https://github.com/ballerina-platform/ballerina-lang/blob/master/LICENSE).
 
-## Useful links
+### Useful links
 
 * Chat live with us on our [Discord server](https://discord.gg/ballerinalang).
 * Technical questions should be posted on Stack Overflow with the [#ballerina](https://stackoverflow.com/questions/tagged/ballerina) tag.
 * Ballerina performance test results are available [here](performance/benchmarks/summary.md).
 
-## Status Dashboard
+### Status Dashboard
 
-### Connectors
+#### Connectors
 
 |Connector| Latest Version | Build | Security Checks | Bugs | Open Pull Requests | GraalVM Check | Code Coverage |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
