@@ -1,4 +1,4 @@
-# [DEPRICATED] docs-ballerina-vscode-extension
+# [DEPRICATED] ballerina-extended-library
 
 ## The Ballerina Extended Library
 
